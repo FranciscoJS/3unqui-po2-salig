@@ -24,6 +24,7 @@ class CreditoPersonalTest
 	private CreditoPersonal credito1;
 	private CreditoPersonal credito2;
 	private CreditoPersonal credito3;
+	
 
 	
 	@BeforeEach
