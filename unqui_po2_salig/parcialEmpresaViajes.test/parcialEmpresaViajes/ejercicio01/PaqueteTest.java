@@ -98,6 +98,8 @@ class PaqueteTest
 		
 		/*
 		vuelosYCataratas = spy( new Paquete( 150, 50, listaProductosI ) );
+		when( vuelosYCataratas.getFechaFin() ).thenReturn(LocalDate.of(2024, 01, 24));
+		
 		saltosYPaseoLancha = spy( new Paquete( 150, 50, listaProductosII ) );
 		*/
 		
