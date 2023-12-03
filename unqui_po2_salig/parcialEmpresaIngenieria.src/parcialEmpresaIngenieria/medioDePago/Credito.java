@@ -1,4 +1,5 @@
 package parcialEmpresaIngenieria.medioDePago;
+import parcialEmpresaIngenieria.actividad.Actividad;
 import parcialEmpresaIngenieria.actividad.Material;
 
 public class Credito implements MedioDePago

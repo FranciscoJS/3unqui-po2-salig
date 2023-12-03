@@ -17,7 +17,8 @@ public class Material
 
 	public double costoTotal(Empresa empresa)
 	{
-		return empresa.getMedioDePago().costoTotal(this);
+		// return empresa.getMedioDePago().costoTotal(this);
+		return empresa.costoTotalAplicandoMetodoPago(this);
 	}
 
 	public double getPrecioUnitario() 

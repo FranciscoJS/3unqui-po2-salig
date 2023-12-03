@@ -1,4 +1,6 @@
 package parcialEmpresaIngenieria.empresa;
+import parcialEmpresaIngenieria.actividad.Actividad;
+import parcialEmpresaIngenieria.actividad.Material;
 import parcialEmpresaIngenieria.actividad.Proyecto;
 import parcialEmpresaIngenieria.medioDePago.MedioDePago;
 
@@ -33,14 +35,25 @@ public class Empresa
 		this.medioDePago = medio;
 	}
 
-	public MedioDePago getMedioDePago() 
-	{
-		return medioDePago;
-	}
+//	public MedioDePago getMedioDePago() 
+//	{
+//		return medioDePago;
+//	}
 	
 	public double costoActividadActual()
 	{
 		return this.proyectoActual.costoTotal(this);
 	}
+
+	
+	// Podría usar costo aplicando método de pago y otro costo normal sin aplicar método de pago ó podría usar efectivo para que no le aplique nada.
+	public double costoTotalAplicandoMetodoPago(Material material) 
+	{
+		return this.medioDePago.costoTotal(material);
+	}
+	// Evitar pedirle atributos propios a una clase desde otra clase externa.. rompe encapsulamiento
+	
+	
+	// 
 	
 }
